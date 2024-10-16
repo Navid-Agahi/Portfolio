@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Modern Front Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Modern Front Page</h1>
+    <p>Select a file to download below:</p>
+  </header>
+
+  <section class="container-grid">
+    <div class="container">
+      <img src="image1.jpg" alt="Image 1">
+      <button onclick="downloadFile('file1.zip')">Download File 1</button>
+    </div>
+
+    <div class="container">
+      <img src="image2.jpg" alt="Image 2">
+      <button onclick="downloadFile('file2.zip')">Download File 2</button>
+    </div>
+
+    <div class="container">
+      <img src="image3.jpg" alt="Image 3">
+      <button onclick="downloadFile('file3.zip')">Download File 3</button>
+    </div>
+
+    <div class="container">
+      <img src="image4.jpg" alt="Image 4">
+      <button onclick="downloadFile('file4.zip')">Download File 4</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Modern Design. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function downloadFile(filename) {
+      const link = document.createElement('a');
+      link.href = filename;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
