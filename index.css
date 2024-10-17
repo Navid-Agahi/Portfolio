@@ -76,4 +76,7 @@ footer {
   background-color: #333;
   color: white;
   margin-top: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
