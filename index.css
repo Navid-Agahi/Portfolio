@@ -7,17 +7,28 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #333;
 }
 
-/* Header and Menu */
-header {
+header, footer {
   background-color: #111;
   color: white;
+}
+
+header {
   padding: 20px;
   text-align: center;
   position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 40px;
 }
 
 .menu {
@@ -50,7 +61,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  background-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.8);
   gap: 40px;
 }
 
@@ -85,15 +96,14 @@ h1 {
   padding: 40px 20px;
 }
 
-/* Website Link Section */
+/* Website Link Section with Icon */
 .website-link {
   max-width: 40%;
   text-align: center;
 }
 
-.website-link img {
-  width: 100%;
-  height: auto;
+.website-link i {
+  color: #333;
   margin-bottom: 20px;
 }
 
@@ -133,14 +143,4 @@ h1 {
 
 .download-buttons button:hover {
   background-color: #555;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  font-size: 0.9em;
-  margin-top: 40px;
 }
