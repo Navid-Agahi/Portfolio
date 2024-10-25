@@ -58,6 +58,7 @@ h1 {
 .intro-text {
   font-size: 1.2em;
   margin-top: 10px;
+  text-align: center;
 }
 
 /* Biography Section */
@@ -148,4 +149,8 @@ h1 {
 
 .download-buttons button:hover {
   background-color: #555;
+}
+
+.footer-text {
+  text-align: center;
 }
