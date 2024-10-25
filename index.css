@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,76 +7,107 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #f2f2f2;
   color: #333;
 }
 
+/* Header and Menu */
 header {
-  text-align: center;
-  padding: 20px;
-  background-color: #008080;
+  background-color: #111;
   color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 3em;
+  font-weight: bold;
 }
 
-p {
+.intro-text {
   font-size: 1.2em;
-}
-
-/* Grid for containers */
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Individual container styles */
-.container {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
-}
-
-.container img {
-  max-width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
-
-.container button {
-  background-color: #008080;
-  color: white;
-  border: none;
-  padding: 10px 20px;
   margin-top: 10px;
-  font-size: 1em;
-  border-radius: 5px;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+/* Website Link Section */
+.website-link {
+  max-width: 40%;
+  text-align: center;
+}
+
+.website-link img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.website-link button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: 2px solid #333;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
-.container button:hover {
-  background-color: #006666;
+.website-link button:hover {
+  background-color: #555;
 }
 
-/* Footer styles */
+/* Download Buttons */
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  right: 0;
+}
+
+.download-buttons button {
+  background-color: #111;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: 2px solid #333;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.download-buttons button:hover {
+  background-color: #555;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background-color: #333;
   color: white;
+  font-size: 0.9em;
   margin-top: 40px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
