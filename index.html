@@ -11,79 +11,75 @@
 <body>
   <!-- Header and Menu -->
   <header>
-    <nav class="menu">
-      <a href="#biography">My Contacts</a>
-    </nav>
     <h1>From Concept to Creation</h1>
     <p class="intro-text">My CV & Portfolio Collection</p>
   </header>
-
-  <!-- Biography Section -->
-  <section id="biography" class="biography-section">
-    <div class="bio-photo">
-      <img src="IMG_4301.png" alt="Navid Agahi's Photo">
-    </div>
-    <div class="bio-text">
-      <h2>About Me</h2>
-      <p>
-        Navid Agahi is a passionate architect and designer with a unique blend of artistic and technical skills. With a background in architecture, art, and graphic design, Navid's portfolio spans a variety of creative disciplines. His work reflects a commitment to both conceptual innovation and practical design, aiming to bring ideas from the abstract into impactful reality.
-      </p>
-    </div>
-  </section>
-
-  <!-- Social Media Links -->
-  <section class="social-links">
-    <div class="social-links-container">
-       <a href="https://navidag.itch.io/'" target="_blank">
-        <i class="fab fa-itch.io"></i> Itch.io
-      </a>
-      <a href="https://www.artstation.com/navidagahi5" target="_blank">
-        <i class="fab fa-artstation"></i> ArtStation
-      </a>
-      <a href="https://www.linkedin.com/in/navid-agahi-ab1376211" target="_blank">
-        <i class="fab fa-linkedin"></i> Linkedin
-      </a>
-      <a href="https://www.instagram.com/navid_agahi" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="https://www.pinterest.com/Navid_AGAHI" target="_blank">
-        <i class="fab fa-pinterest"></i> Pinterest
-      </a>
-    </div>
-  </section>
-
   
+  <div class="main-container">    
 
-    <!-- Right side with download buttons -->
-    <div class="download-buttons">
-      <button onclick="downloadFile('Architecture_Portfolio_.pdf')">Architecture Portfolio</button>
-      <button onclick="downloadFile('Artistique portfolio.pdf')">Artistic Portfolio</button>
-      <button onclick="downloadFile('Graphique.pdf')">Graphic Design Portfolio</button>
-      <button onclick="downloadFile('file4.zip')">Game Design Portfolio</button>
-    </div>
-  </section>
+    <!-- Biography Section -->
+     <section id="biography" class="biography-section">
+       <div class="bio-photo">
+         <img src="IMG_4301.png" alt="Navid Agahi's Photo">
+       </div>
+       <div class="bio-text">
+         <h2>About Me</h2>
+         <p>
+           Navid Agahi is a passionate architect and designer with a unique blend of artistic and technical skills. With a background in architecture, art, and graphic design, Navid's portfolio spans a variety of creative disciplines. His work reflects a commitment to both conceptual innovation and practical design, aiming to bring ideas from the abstract into impactful reality.
+         </p>
+       </div>
+     </section>
 
-  <!-- Game Links Section -->
-  <section class="game-links">
-    <div class="game-item">
-      <img src="logo1.png" alt="Game 1 Logo" class="game-logo">
-      <span class="game-name">Love Beyond Hell</span>
-      <a href="https://game1link.com" target="_blank" class="game-link">Play Now</a>
-      <button onclick="downloadFile('Game1Portfolio.pdf')" class="download-portfolio-btn">Download Portfolio</button>
+     <div class="center-section">
+
+      <!-- Social Media Links -->
+      <section class="social-links-container">
+          <a class="social-links-button" href="https://navidag.itch.io/'" target="_blank">
+            <i class="fab fa-itch.io"></i> Itch.io
+          </a>
+          <a class="social-links-button" href="https://www.artstation.com/navidagahi5" target="_blank">
+            <i class="fab fa-artstation"></i> ArtStation
+          </a>
+          <a class="social-links-button" href="https://www.linkedin.com/in/navid-agahi-ab1376211" target="_blank">
+            <i class="fab fa-linkedin"></i> Linkedin
+          </a>
+          <a class="social-links-button" href="https://www.instagram.com/navid_agahi" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a class="social-links-button" href="https://www.pinterest.com/Navid_AGAHI" target="_blank">
+            <i class="fab fa-pinterest"></i> Pinterest
+          </a>
+          <button class="social-links-button" onclick="downloadFile('Architecture_Portfolio_.pdf')">Architecture Portfolio</button>
+          <button class="social-links-button" onclick="downloadFile('Artistique portfolio.pdf')">Artistic Portfolio</button>
+          <button class="social-links-button" onclick="downloadFile('Graphique.pdf')">Graphic Design Portfolio</button>
+          <button class="social-links-button" onclick="downloadFile('file4.zip')">Game Design Portfolio</button>
+      </section>
+
+      <!-- Game Links Section -->
+      <section class="game-links">
+        <div class="game-item">
+          <img src="logo1.png" alt="Game 1 Logo" class="game-logo">
+          <span class="game-name">Love Beyond Hell</span>
+          <a href="https://game1link.com" target="_blank" class="game-link">Play Now</a>
+          <button onclick="downloadFile('Game1Portfolio.pdf')" class="download-portfolio-btn">Download Portfolio</button>
+        </div>
+        <div class="game-item">
+          <img src="logo2.png" alt="Game 2 Logo" class="game-logo">
+          <span class="game-name">Night Shift</span>
+          <a href="https://game2link.com" target="_blank" class="game-link">Play Now</a>
+          <button onclick="downloadFile('Game2Portfolio.pdf')" class="download-portfolio-btn">Download Portfolio</button>
+        </div>
+        <div class="game-item">
+          <img src="logo3.png" alt="Game 3 Logo" class="game-logo">
+          <span class="game-name">Sand Runner</span>
+          <a href="https://game3link.com" target="_blank" class="game-link">Play Now</a>
+          <button onclick="downloadFile('Game3Portfolio.pdf')" class="download-portfolio-btn">Download Portfolio</button>
+        </div>
+        
+      </section>
+
     </div>
-    <div class="game-item">
-      <img src="logo2.png" alt="Game 2 Logo" class="game-logo">
-      <span class="game-name">Night Shift</span>
-      <a href="https://game2link.com" target="_blank" class="game-link">Play Now</a>
-      <button onclick="downloadFile('Game2Portfolio.pdf')" class="download-portfolio-btn">Download Portfolio</button>
-    </div>
-    <div class="game-item">
-      <img src="logo3.png" alt="Game 3 Logo" class="game-logo">
-      <span class="game-name">Sand Runner</span>
-      <a href="https://game3link.com" target="_blank" class="game-link">Play Now</a>
-      <button onclick="downloadFile('Game3Portfolio.pdf')" class="download-portfolio-btn">Download Portfolio</button>
-    </div>
-  </section>
+  </div>
 
   <!-- Footer Section -->
   <footer>
