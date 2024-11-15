@@ -24,7 +24,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Increased opacity for readability */
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
@@ -44,7 +44,7 @@ footer {
   padding: 20px;
   color: white;
   font-size: 0.9em;
-  position: relative; /* Changed from fixed to relative */
+  position: relative;
   margin-top: 20px;
 }
 
@@ -93,7 +93,7 @@ h1 {
 }
 
 .bio-text {
-  flex: 1; /* Allows better alignment */
+  flex: 1;
   max-width: 600px;
 }
 
@@ -104,9 +104,9 @@ h1 {
 }
 
 .bio-text p {
-  font-size: 1.2em; /* Increased for readability */
+  font-size: 1.2em;
   line-height: 1.5em;
-  color: #222; /* Darkened for better contrast */
+  color: #222;
 }
 
 /* Main Content */
@@ -126,7 +126,7 @@ h1 {
 }
 
 .website-link i {
-  font-size: 1.5em; /* Adjusted icon size */
+  font-size: 1.5em;
   color: #333;
   margin-bottom: 10px;
 }
@@ -141,7 +141,7 @@ h1 {
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .website-link button:hover {
@@ -167,13 +167,73 @@ h1 {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .download-buttons button:hover {
   background-color: #555;
 }
 
+/* Game Links Section */
+.game-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 5px;
+  gap: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.game-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+}
+
+.game-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.game-link:hover {
+  text-decoration: underline;
+}
+
+.download-portfolio-btn {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-portfolio-btn:hover {
+  background-color: #555;
+}
+
+/* Footer Text */
 .footer-text {
   text-align: center;
 }
