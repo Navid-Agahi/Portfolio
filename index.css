@@ -1,9 +1,9 @@
 /* Global Styles */
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Arial', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 p {
@@ -61,11 +61,11 @@ h1 {
   text-align: center;
 }
 
-/* Biography Section /
+/* Biography Section */
 .biography-section {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 40px 20px;
   background-color: rgba(230, 230, 230, 0.5);
   gap: 40px;
@@ -94,15 +94,15 @@ h1 {
   color: #555;
 }
 
-/ Main Content /
+/* Main Content */
 .content {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 40px 20px;
 }
 
-/ Website Link Section with Icon /
+/* Website Link Section with Icon */
 .website-link {
   max-width: 40%;
   text-align: center;
@@ -127,7 +127,7 @@ h1 {
   background-color: #555;
 }
 
-/ Download Buttons */
+/* Download Buttons */
 .download-buttons {
   display: flex;
   flex-direction: column;
@@ -135,6 +135,7 @@ h1 {
   position: relative;
   right: 0;
 }
+
 .download-buttons button {
   background-color: #111;
   color: white;
