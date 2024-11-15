@@ -1,142 +1,70 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
-
-p {
-  text-align: justify;
-}
-
+/* General Improvements */
 body {
   background: url('Background.png') no-repeat center center fixed;
   background-size: cover;
-  color: #333;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
+  color: #eee;
+  font-family: 'Arial', sans-serif;
 }
 
 header, footer {
-  background-color: #111;
-  color: white;
-}
-
-header {
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-
-footer {
+  background-color: #222;
+  color: #ddd;
   text-align: center;
   padding: 20px;
-  color: white;
-  font-size: 0.9em;
-  position: relative;
-  margin-top: 20px;
-}
-
-.menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-h1 {
-  font-size: 3em;
-  font-weight: bold;
 }
 
 .intro-text {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-top: 10px;
-  text-align: center;
+  color: #ccc;
 }
 
 /* Biography Section */
 .biography-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 40px 20px;
-  background-color: rgba(230, 230, 230, 0.5);
-  gap: 40px;
+  background-color: rgba(34, 34, 34, 0.8);
   border-radius: 8px;
-  margin: 40px;
+  gap: 40px;
+  max-width: 80%;
+  margin: 40px auto;
 }
 
 .bio-photo img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.bio-text {
-  flex: 1;
-  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .bio-text h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-bottom: 10px;
-  color: #111;
+  color: #fff;
 }
 
 .bio-text p {
-  font-size: 1.2em;
-  line-height: 1.5em;
-  color: #222;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #ccc;
 }
 
-/* Main Content */
-.content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 40px;
-  gap: 40px;
-  margin: 40px;
-}
-
-/* Website Link Section with Icon */
+/* Visit Itch.io Button */
 .website-link {
-  max-width: 40%;
-  text-align: center;
-}
-
-.website-link i {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .website-link button {
-  background-color: #333;
-  color: white;
+  background-color: #444;
+  color: #fff;
   padding: 10px 20px;
   font-size: 1.1em;
-  border: 2px solid #333;
+  border: 2px solid #555;
   cursor: pointer;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
@@ -145,52 +73,51 @@ h1 {
 }
 
 .website-link button:hover {
-  background-color: #555;
+  background-color: #666;
 }
 
-/* Download Buttons */
+/* Download Portfolio Buttons */
 .download-buttons {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  position: relative;
+  gap: 15px;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .download-buttons button {
-  background-color: #111;
+  background-color: #444;
   color: white;
-  font-size: 1.2em;
-  padding: 15px 30px;
-  border: 2px solid #333;
+  font-size: 1em;
+  padding: 12px 20px;
+  border: none;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .download-buttons button:hover {
-  background-color: #555;
+  background-color: #666;
 }
 
 /* Game Links Section */
 .game-links {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 0 20px;
+  max-width: 80%;
+  margin: 30px auto;
 }
 
 .game-item {
   display: flex;
   align-items: center;
-  padding: 10px;
-  background-color: rgba(240, 240, 240, 0.8);
+  background-color: rgba(34, 34, 34, 0.8);
   border-radius: 5px;
-  gap: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  gap: 15px;
 }
 
 .game-logo {
@@ -200,14 +127,14 @@ h1 {
 }
 
 .game-name {
+  flex: 1;
   font-size: 1.1em;
   font-weight: bold;
-  color: #333;
-  flex: 1;
+  color: #eee;
 }
 
 .game-link {
-  color: #007bff;
+  color: #3498db;
   text-decoration: none;
   font-size: 1em;
   margin-right: 10px;
@@ -218,7 +145,7 @@ h1 {
 }
 
 .download-portfolio-btn {
-  background-color: #333;
+  background-color: #444;
   color: white;
   padding: 5px 10px;
   border: none;
@@ -230,10 +157,5 @@ h1 {
 }
 
 .download-portfolio-btn:hover {
-  background-color: #555;
-}
-
-/* Footer Text */
-.footer-text {
-  text-align: center;
+  background-color: #666;
 }
