@@ -13,17 +13,16 @@ header, footer {
   text-align: center;
   padding: 20px
 }
-.Logo-photo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
+
 
 .intro-text {
   font-size: 1.4em;
   margin-top: 10px;
   color: #ccc;
+}
+.Logo-photo img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Biography Section */
