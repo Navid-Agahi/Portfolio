@@ -1,4 +1,4 @@
-/* General */
+/* General Improvements */
 body {
   background: url('Background.png') no-repeat center center fixed;
   background-size: cover;
@@ -42,29 +42,61 @@ header, footer {
 .bio-text h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .bio-text p {
   font-size: 1.1em;
   line-height: 1.6em;
+  color: #ccc;
 }
 
-/* Social Media Links */
-.social-links-container {
+/* Visit Itch.io Button */
+.website-link {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.website-link button {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: 2px solid #555;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.website-link button:hover {
+  background-color: #666;
+}
+
+/* Social Media Links Section */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-links-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #444;
   color: white;
   padding: 10px 20px;
+  font-size: 1rem;
   text-transform: uppercase;
   border-radius: 5px;
+  border: 2px solid #555;
+  cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 
@@ -72,26 +104,108 @@ header, footer {
   background-color: #666;
 }
 
-/* Game Links */
+.social-links-container i {
+  margin-right: 10px;
+}
+
+/* Download Portfolio Buttons */
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.download-buttons button {
+  background-color: #444;
+  color: white;
+  font-size: 1em;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-buttons button:hover {
+  background-color: #666;
+}
+
+/* Game Links Section */
 .game-links {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .game-item {
+  display: flex;
+  align-items: center;
   background-color: rgba(34, 34, 34, 0.8);
-  border-radius: 8px;
-  padding: 20px;
+  width: 20rem;
+  height: 20rem;
 }
 
 .game-logo {
-  width: 100%;
+  width: 40px;
+  height: 40px;
   border-radius: 5px;
 }
 
+.game-name {
+  flex: 1;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #eee;
+}
+
+.game-link {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.game-link:hover {
+  text-decoration: underline;
+}
+
 .download-portfolio-btn {
-  margin-top: 10px;
+  background-color: #444;
+  color: white;
   padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9em;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-portfolio-btn:hover {
+  background-color: #666;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 5rem;
+}
+
+.center-section {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
