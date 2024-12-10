@@ -12,12 +12,11 @@ header, footer {
   color: #ddd;
   text-align: center;
   padding: 20px
+}
   .Logo-photo img {
   width: 40px;
   height: 40px;
 }
-}
-
 
 .intro-text {
   font-size: 1.4em;
